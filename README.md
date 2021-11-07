@@ -1,6 +1,6 @@
 # tictactoe-go
 
-A in-terminal tictactoe game built with Go.
+An in-terminal tictactoe game built with Go.
 
 # Play
 
