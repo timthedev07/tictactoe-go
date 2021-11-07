@@ -108,8 +108,14 @@ func promptAction(board Board) Action {
 	for !ok {
 		val, err := strconv.ParseUint(response, 10, 64)
 		if err == nil {
+			if val > 2 {
+				fmt.Println("Input out of range, try again.")
+				continue
+			}
 			i = int(val)
 			ok = true
+		} else {
+			fmt.Println("Invalid input, try again.")
 		}
 	}
 	ok = false
@@ -117,8 +123,14 @@ func promptAction(board Board) Action {
 	for !ok {
 		val, err := strconv.ParseUint(response, 10, 64)
 		if err == nil {
+			if val > 2 {
+				fmt.Println("Input out of range, try again.")
+				continue
+			}
 			j = int(val)
 			ok = true
+		} else {
+			fmt.Println("Invalid input, try again.")
 		}
 	}
 
